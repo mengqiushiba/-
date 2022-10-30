@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pwmled\startup_stm32f103xb.o"
+"pwmled\main.o"
+"pwmled\gpio.o"
+"pwmled\tim.o"
+"pwmled\stm32f1xx_it.o"
+"pwmled\stm32f1xx_hal_msp.o"
+"pwmled\stm32f1xx_hal_gpio_ex.o"
+"pwmled\stm32f1xx_hal_tim.o"
+"pwmled\stm32f1xx_hal_tim_ex.o"
+"pwmled\stm32f1xx_hal.o"
+"pwmled\stm32f1xx_hal_rcc.o"
+"pwmled\stm32f1xx_hal_rcc_ex.o"
+"pwmled\stm32f1xx_hal_gpio.o"
+"pwmled\stm32f1xx_hal_dma.o"
+"pwmled\stm32f1xx_hal_cortex.o"
+"pwmled\stm32f1xx_hal_pwr.o"
+"pwmled\stm32f1xx_hal_flash.o"
+"pwmled\stm32f1xx_hal_flash_ex.o"
+"pwmled\stm32f1xx_hal_exti.o"
+"pwmled\system_stm32f1xx.o"
+--strict --scatter "PWMLED\PWMLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWMLED.map" -o PWMLED\PWMLED.axf

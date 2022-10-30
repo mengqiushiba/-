@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"huxideng\startup_stm32f103xb.o"
+"huxideng\main.o"
+"huxideng\gpio.o"
+"huxideng\tim.o"
+"huxideng\usart.o"
+"huxideng\stm32f1xx_it.o"
+"huxideng\stm32f1xx_hal_msp.o"
+"huxideng\stm32f1xx_hal_gpio_ex.o"
+"huxideng\stm32f1xx_hal_tim.o"
+"huxideng\stm32f1xx_hal_tim_ex.o"
+"huxideng\stm32f1xx_hal.o"
+"huxideng\stm32f1xx_hal_rcc.o"
+"huxideng\stm32f1xx_hal_rcc_ex.o"
+"huxideng\stm32f1xx_hal_gpio.o"
+"huxideng\stm32f1xx_hal_dma.o"
+"huxideng\stm32f1xx_hal_cortex.o"
+"huxideng\stm32f1xx_hal_pwr.o"
+"huxideng\stm32f1xx_hal_flash.o"
+"huxideng\stm32f1xx_hal_flash_ex.o"
+"huxideng\stm32f1xx_hal_exti.o"
+"huxideng\stm32f1xx_hal_uart.o"
+"huxideng\system_stm32f1xx.o"
+--strict --scatter "huxideng\huxideng.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "huxideng.map" -o huxideng\huxideng.axf
