@@ -3,8 +3,8 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'led' 
- * Target:  'led' 
+ * Project: 'LED' 
+ * Target:  'LED' 
  */
 
 #ifndef RTE_COMPONENTS_H
